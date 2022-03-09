@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin: 0;
+  background-image: linear-gradient(to right, #457fca, #5691c8);
+  background-size: contain;
+}
+
+.navbar-brand {
+  font-family: 'Satisfy', cursive;
+    font-size: xx-large;
+    color: #CFFFFE;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navbar-nav a {
+  font-size: medium;
+  color: #A1CAE2;
+  padding: 1em 2em;
+}
+
+.navbar-nav li:hover {  
+  color: #2FA4FF;
+  background-color: #A4EBF3;
+}
+
+.navbar-toggler {
+  color: aliceblue;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.container button {
+  border: 1px solid aliceblue;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.input-group {
+  max-width: 20%;
+}
+
+.banner {
+  background-color: red;
+  width: 111em;
+  height: 2em;
+  color: #fffcdc;
+  font-size: smaller;
+  text-align: center;
+}
+  
+  .container-fluid img {
+    width: 25px;
+  }
+  
+  .container2 {
+    max-width: fit-content;
+    padding: 0;
+  }
+  
+  .head-video {
+    width: 55em;
+    height: 30em;
+    margin: 1em;
+  }
+  
+  hr {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 5px dashed #219f94;
+    background-color: transparent;
+    margin-bottom: 1em;
+  }
+  
+  .container2 .card {
+    margin: 1em;
+    flex-direction: row;
+    width: 95%;
+    padding-left: 1em;
+  }
+  .container2 .card-title {
+    font-weight: bold;
+  }
+  
+  .side-video {
+    width: 20em;
+    height: 40em;
+    margin-left: 2em;
+    padding-top: 0;
+  }
+  
+  .card-img-top {
+    max-width: 20em;
+    max-height: 20em;
+  }
+  
+  .card-text {
+    font-size: small;
+  }
+  
+  .card-body a {
+    font-size: medium;
+  }
+  
+  .recommended {
+    color: red;
+    line-height: 2em;
+    font-weight: bold;
+  }
+  
+  .ads {
+    position: absolute;
+    right: 0;
+    top: 4.5em;
+    height: 126em;
+  }
+  
+  .ads img {
+    display: flex;
+    margin-bottom: 1.5em;
+    border: 1px solid gray;
+    width: 12em;
+    height: 30em;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 60em 32em 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  
+  aside {
+    max-width: fit-content;
+    width: 100%;
+    padding: 3em;
+    padding-top: 0;
+    line-height: 1.75em;
+  }
+  
+  aside a {
+    font-size: 14px;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+  
+  .list-categories, .card-header {
+    text-align: center;
+  }
+  
+  .list-categories {
+    text-align: center;
+  }
+  
+  .list-categories li {
+    display: inline;
+    padding: 0.5em 5em;
+    border-radius: 1em;
+  }
+  
+  .list-categories li:hover {
+    background-color: #E1E5EA;
+  }
+
+  footer {
+    margin-bottom: 0;
+    background-image: linear-gradient(to right, #457fca, #5691c8);
+  }
+  
+  footer a {
+    color: aliceblue;
+  }
+  
+  @media only screen and (max-width: 768px) {
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body {
+          display: block;
+      }
+      main {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr ;
+          justify-content: center;
+          padding: 0;
+      }
+      .head-video {
+          max-width: 90%;
+          height: 10%;
+          padding: 0;
+      }
+      .card a {
+          font-size: 14px;
+      }
+      .card p {
+          font-size: 10px;
+      }
+      .card-img-top {
+          display: none;
+      }
+      .ads {
+          display: none;
+      }
+      aside {
+          display: block;
+      }
+      aside a {
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 0;
+      }
+      .side-video {
+          height: 25%;
+          padding: 2em 0;
+      }
+      .banner {
+          display: none;
+      }
+      iframe {
+          display: none;
+      }
+      article {
+          max-width: fit-content;
+          margin: 0 auto;
+      }
+      .list-categories li {
+          display: inline;
+          padding-right: 2em;
+      }
+  }
