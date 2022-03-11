@@ -196,13 +196,15 @@ footer a {
 }
 
 @media only screen and (max-width: 768px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     body {
         display: block;
+    }
+    .input-group {
+      max-width: fit-content;
+    }
+    .card {
+      max-width: 90%;
+      display: block;
     }
     main {
         display: grid;
@@ -217,14 +219,12 @@ footer a {
         padding: 0;
     }
     .card a {
-        font-size: 14px;
+        font-size: 16px;
     }
     .card p {
-        font-size: 10px;
+        font-size: 14px;
     }
-    .card-img-top {
-        display: none;
-    }
+    
     .ads {
         display: none;
     }
@@ -232,13 +232,12 @@ footer a {
         display: block;
     }
     aside a {
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0;
         line-height: 0;
     }
     .side-video {
-        height: 25%;
-        padding: 2em 0;
+        display: none;
     }
     .banner {
         display: none;
@@ -253,5 +252,12 @@ footer a {
     .list-categories li {
         display: inline;
         padding-right: 2em;
+    }
+    @media only screen and (min-width: 768px)  {
+      .card img {
+        float: left;
+        margin: 1em 0.5em 0 0;
+        height: 12em;
+      }
     }
 }

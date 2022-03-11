@@ -163,7 +163,8 @@ footer {
         display: block;
     }
     .img-fluid {
-        display: inline-block;
+        margin: 0;
+        max-width: fit-content;
     }
     .wrapper {
         display: block;
@@ -180,6 +181,7 @@ footer {
         max-width: 100%;
         padding: 0 2em;
     }
+    .side-video {display: none;}
     .ads {
         display: none;
     }
@@ -193,5 +195,8 @@ footer {
         width: 60%;
         padding: 0;
     }
-    
+    .list-categories li {
+      display: inline;
+      line-height: 2em;
+    } 
 }
